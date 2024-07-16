@@ -24,13 +24,13 @@ const userName = prompt('Inserisci nome utente'); // inserimento nome utente da 
 
 if (userNames.includes(userName)){ //verifica se il nome utente è presente
             
-    console.log('acesso autorizzato');
+    console.log('autorizzazione concessa');
 
 }
 
 else {
 
-    console.log('acesso negato');
+    console.log('autorizzazione negata');
     
 }
 
