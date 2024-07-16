@@ -18,25 +18,25 @@ const userNames = [
     'marco'
 ];
 
-console.log(userNames); // visualizzazione in console
+console.log(userNames); 
 
 const userName = prompt('Inserisci nome utente'); // inserimento nome utente da parte dell'utente
 
-console.log(userName);
+if (userNames.includes(userName)){ //verifica se il nome utente è presente
+            
+    console.log('acesso autorizzato');
 
-
-for(let i = 0; i < userNames.length; i ++){
-
-    if(userName == userNames[i]  ){
-        
-        console.log('Acesso autorizzato');
-
-    } 
-    else {
-
-        console.log('Acesso negato');
-    }
 }
+
+else {
+
+    console.log('acesso negato');
+    
+}
+
+
+    
+
 
 
 
