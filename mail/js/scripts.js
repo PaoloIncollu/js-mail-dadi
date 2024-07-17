@@ -22,7 +22,7 @@ console.log(userNames);
 
 const userName = prompt('Inserisci nome utente'); // inserimento nome utente da parte dell'utente
 
-if (userNames.includes(userName)){ //verifica se il nome utente è presente
+/*if (userNames.includes(userName)){ //verifica se il nome utente è presente
             
     console.log('autorizzazione concessa');
 
@@ -33,8 +33,21 @@ else {
     console.log('autorizzazione negata');
     
 }
+*/
 
+let found = false;
+for( let i=0; i < userNames.length; i ++){
 
+    if(userNames[i] == userName){
+
+        console.log('accesso autorizzato');
+        found = true;
+    }
+}
+
+if(found == false){
+    console.log('accesso negato');
+}
     
 
 
